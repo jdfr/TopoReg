@@ -1,0 +1,1024 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 4.3.3.2 (Linux)"/>
+	<meta name="created" content="2015-03-19T11:30:39.944207782"/>
+	<meta name="changed" content="2015-03-25T09:16:40.481799074"/>
+	<style type="text/css">
+		@page { margin: 0.79in }
+		p { margin-bottom: 0.1in; line-height: 120% }
+		h1 { margin-bottom: 0.08in }
+		h1.western { font-family: "Liberation Sans", sans-serif; font-size: 18pt }
+		h1.cjk { font-family: "Droid Sans Fallback"; font-size: 18pt }
+		h1.ctl { font-family: "FreeSans"; font-size: 18pt }
+		h2.western { font-family: "Liberation Sans", sans-serif; font-size: 16pt }
+		h2.cjk { font-family: "Droid Sans Fallback"; font-size: 16pt }
+		h2.ctl { font-family: "FreeSans"; font-size: 16pt }
+		h3.western { font-family: "Liberation Sans", sans-serif }
+		h3.cjk { font-family: "Droid Sans Fallback" }
+		h3.ctl { font-family: "FreeSans" }
+		td p { margin-bottom: 0in }
+		a:link { so-language: zxx }
+	</style>
+</head>
+<body lang="en-US" dir="ltr">
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">This
+is a simple user interface for the TOPOREG registration engine. 
+</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<div id="Table of Contents1" dir="ltr">
+	<div id="Table of Contents1_Head" dir="ltr">
+		<p style="margin-top: 0.17in; margin-bottom: 0.08in; line-height: 100%; page-break-after: avoid">
+		<font face="Liberation Sans, sans-serif"><font size="4" style="font-size: 16pt"><b>Table
+		of Contents</b></font></font></p>
+	</div>
+	<p style="margin-bottom: 0in; line-height: 100%"><a href="#__RefHeading__1273_985061526">QUICKSTART	</a></p>
+	<p style="margin-bottom: 0in; line-height: 100%"><a href="#__RefHeading__1275_985061526">HOW
+	IT WORKS	</a></p>
+	<p style="margin-bottom: 0in; line-height: 100%"><a href="#__RefHeading__1277_985061526">DESCRIPTION
+	OF THE INTERFACE	</a></p>
+	<p style="margin-left: 0.2in; margin-bottom: 0in; line-height: 100%">
+	<a href="#__RefHeading__212_985061526">Tab “Files”	</a></p>
+	<p style="margin-left: 0.2in; margin-bottom: 0in; line-height: 100%">
+	<a href="#__RefHeading__214_985061526">Tab “Preparation”	</a></p>
+	<p style="margin-left: 0.2in; margin-bottom: 0in; line-height: 100%">
+	<a href="#__RefHeading__537_985061526">Tab “Registration”	</a></p>
+	<p style="margin-left: 0.2in; margin-bottom: 0in; line-height: 100%">
+	<a href="#__RefHeading__1297_985061526">Tab “Freeform parameters”	</a></p>
+	<p style="margin-left: 0.2in; margin-bottom: 0in; line-height: 100%">
+	<a href="#__RefHeading__1299_985061526">Tab “Log”	</a></p>
+	<p style="margin-left: 0.2in; margin-bottom: 0in; line-height: 100%">
+	<a href="#__RefHeading__753_463932619">Tab “Visualization”	</a></p>
+	<p style="margin-left: 0.2in; margin-bottom: 0in; line-height: 100%">
+	<a href="#__RefHeading__755_463932619">Tab “Output”	</a></p>
+	<p style="margin-left: 0.2in; margin-bottom: 0in; line-height: 100%">
+	<a href="#__RefHeading__1301_985061526">Tab “Help”	</a></p>
+	<p style="margin-left: 0.2in; margin-bottom: 0in; line-height: 100%">
+	<a href="#__RefHeading__1303_985061526">Debug files	</a></p>
+	<p style="margin-left: 0.2in; margin-bottom: 0in; line-height: 100%">
+	<a href="#__RefHeading__1305_985061526">Intermediate files	</a></p>
+</div>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<h1 class="western" align="center"><a name="__RefHeading__1273_985061526"></a>
+QUICKSTART</h1>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">Most
+parameters have default values which will work with many topographic
+images. If you cannot wait to read the documentation, just do the
+following:</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<ul>
+	<li/>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">
+	In the “Files” tab, set the working directory. This will be the
+	directory where intermediate, debug and output files are saved.</p>
+	<li/>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">
+	Then, select the image files with the “Select file names”
+	button. The file name list will be copied in the textbox below the
+	button. Change the order if necessary (each image must overlap with
+	the precedent).</p>
+	<li/>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">
+	If you are using PNG or TIFF images, please set the “Z scale”
+	and “Pixel step” parameters to sensible values (otherwise, the
+	registration may fail).</p>
+	<li/>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">
+	If the images are just displaced (not rotated), just start the
+	registration with the “Start registration” button. Otherwise, go
+	to the “Registration” tab and uncheck “Enable Phase
+	Correlation”, then press the “Start registration” button.</p>
+	<li/>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">
+	The “Log” tab will display log messages from the registration
+	engine. After it finishes, and if there are no errors, you can use
+	the “Save” tab to create images from the registered data.</p>
+</ul>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">WARNING:
+the registration process is slow, and it gets slower the bigger the
+images, and the more overlap between images.</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<h1 class="western" align="center"><a name="__RefHeading__1275_985061526"></a>
+HOW IT WORKS</h1>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">The
+workflow of the registration engine is as follows:</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<ol>
+	<li/>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">
+	It requires as input a list of files and optionally a specification
+	of the processing order and of how they overlap.</p>
+	<li/>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">
+	Preprocessing: each image file is opened, its data is scaled (if
+	applicable), and it is de-rotated (if applicable).</p>
+	<li/>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">
+	Registration: the files are processed sequentially, in the order
+	specified. For each file, the registration process has two phases:</p>
+	<p align="justify" style="margin-bottom: 0in; line-height: 100%"></p>
+	<ol>
+		<li/>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">
+		First phase: the file is registered with each all the previous
+		overlapping ones. The best registration is selected.</p>
+		<li/>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">
+		Using the registration from the first phase, overlapping pixels
+		from all previous images are selected to initiate a fine
+		registration. Older (in the processing order) images have
+		precedence over newer ones.</p>
+		<li/>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">
+		Fine registration is achieved with the Iterative Closest Point
+		algorithm.</p>
+	</ol>
+</ol>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">Now,
+we will describe the contents of the tabs in the context of the
+above-mentioned workflow.</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<h1 class="western" align="center"><a name="__RefHeading__1277_985061526"></a>
+DESCRIPTION OF THE INTERFACE</h1>
+<p align="center"><br/>
+<br/>
+
+</p>
+<p align="center"><br/>
+<br/>
+
+</p>
+<h2 class="western" align="center"><a name="__RefHeading__212_985061526"></a>
+Tab “Files”</h2>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">In
+this tab, you can set</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<ul>
+	<li/>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">
+	The working directory. This is the directory where  intermediate,
+	debug and output files are saved. The directory can be entered
+	manually or with the “Open working directory” button.</p>
+	<p align="justify" style="margin-bottom: 0in; line-height: 100%"></p>
+	<li/>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">
+	The list of input file names. This is the list of names of image
+	files. You can enter the file names manually, or select them in a
+	file dialog with the “Select file names” button. (you can copy
+	and paste the file names to reorder them, if necessary). If the
+	files are entered manually or the order is altered, you have to
+	click the “Validate file names” button. The list of validated
+	file names to be used in the registration process is to the right of
+	the textbox where the file names are input.</p>
+	<p align="justify" style="margin-bottom: 0in; line-height: 100%"></p>
+	<li/>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">
+	The grid layout options. By default, the images are not required to
+	be in any order. They are only required to overlap with the
+	precedent one in the list. However, if they were acquired in a grid,
+	this can improve the registration process. This can be indicated by
+	checking “use grid options”. The parameters for the grid layout
+	are:</p>
+	<ul>
+		<li/>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">
+		“Number of rows” / “Number of columns”: specify the
+		dimensions of the grid</p>
+		<li/>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">
+		“the grid is complete” checkbox. If this is checked, the number
+		of images must match the product of the numbers of rows and
+		columns. Otherwise, it indicates that the acquisition process was
+		not completed, and it will suppose that the grid is incomplete, but
+		it still can generate a valid processing specification.</p>
+		<li/>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">
+		“Fill mode (1)”: by default, the images are supposed to be
+		taken row by row, but this can be reversed to column by column, if
+		necessary. Examples:</p>
+	</ul>
+</ul>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">Example
+“row by row”:</p>
+<p align="justify" style="margin-left: 0.98in; margin-bottom: 0in; line-height: 100%">
+<br/>
+
+</p>
+<table width="216" cellpadding="4" cellspacing="0">
+	<col width="45">
+	<col width="46">
+	<col width="46">
+	<col width="45">
+	<tr valign="top">
+		<td width="45" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0.04in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p align="center">0</p>
+		</td>
+		<td width="46" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0.04in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p align="center">1</p>
+		</td>
+		<td width="46" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0.04in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p align="center">2</p>
+		</td>
+		<td width="45" style="border: 1px solid #000000; padding: 0.04in">
+			<p align="center">3</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p align="center">4</p>
+		</td>
+		<td width="46" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p align="center">5</p>
+		</td>
+		<td width="46" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p align="center">6</p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+			<p align="center">7</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p align="center">8</p>
+		</td>
+		<td width="46" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p align="center">9</p>
+		</td>
+		<td width="46" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p align="center">10</p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+			<p align="center">11</p>
+		</td>
+	</tr>
+</table>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"> 
+</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">Example
+“column by column”:</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<table width="216" cellpadding="4" cellspacing="0">
+	<col width="45">
+	<col width="46">
+	<col width="46">
+	<col width="45">
+	<tr valign="top">
+		<td width="45" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0.04in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p align="center">0</p>
+		</td>
+		<td width="46" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0.04in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p align="center">3</p>
+		</td>
+		<td width="46" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0.04in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p align="center">6</p>
+		</td>
+		<td width="45" style="border: 1px solid #000000; padding: 0.04in">
+			<p align="center">9</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p align="center">1</p>
+		</td>
+		<td width="46" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p align="center">4</p>
+		</td>
+		<td width="46" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p align="center">7</p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+			<p align="center">10</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p align="center">2</p>
+		</td>
+		<td width="46" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p align="center">5</p>
+		</td>
+		<td width="46" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p align="center">8</p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+			<p align="center">11</p>
+		</td>
+	</tr>
+</table>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<ul>
+	<ul>
+		<li/>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">
+		“Fill mode (2)”: by default, the images are supposed to be
+		taken in “snake” mode, that is, each row (resp. column) is
+		acquired in the opposite direction with respect to the previous
+		one. The other mode, “grid”, means that all rows (resp.
+		columns) were acquired in the same direction. Examples:</p>
+	</ul>
+</ul>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">Example
+of “snake” order (row by row):</p>
+<p align="justify" style="margin-left: 0.98in; margin-bottom: 0in; line-height: 100%">
+<br/>
+
+</p>
+<table width="216" cellpadding="4" cellspacing="0">
+	<col width="45">
+	<col width="46">
+	<col width="46">
+	<col width="45">
+	<tr valign="top">
+		<td width="45" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0.04in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p align="center">0</p>
+		</td>
+		<td width="46" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0.04in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p align="center">1</p>
+		</td>
+		<td width="46" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0.04in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p align="center">2</p>
+		</td>
+		<td width="45" style="border: 1px solid #000000; padding: 0.04in">
+			<p align="center">3</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p align="center">7</p>
+		</td>
+		<td width="46" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p align="center">6</p>
+		</td>
+		<td width="46" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p align="center">5</p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+			<p align="center">4</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p align="center">8</p>
+		</td>
+		<td width="46" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p align="center">9</p>
+		</td>
+		<td width="46" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p align="center">10</p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+			<p align="center">11</p>
+		</td>
+	</tr>
+</table>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"> 
+</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">Example
+of “grid” order (row by row):</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<table width="216" cellpadding="4" cellspacing="0">
+	<col width="45">
+	<col width="46">
+	<col width="46">
+	<col width="45">
+	<tr valign="top">
+		<td width="45" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0.04in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p align="center">0</p>
+		</td>
+		<td width="46" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0.04in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p align="center">1</p>
+		</td>
+		<td width="46" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0.04in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p align="center">2</p>
+		</td>
+		<td width="45" style="border: 1px solid #000000; padding: 0.04in">
+			<p align="center">3</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p align="center">4</p>
+		</td>
+		<td width="46" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p align="center">5</p>
+		</td>
+		<td width="46" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p align="center">6</p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+			<p align="center">7</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p align="center">8</p>
+		</td>
+		<td width="46" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p align="center">9</p>
+		</td>
+		<td width="46" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p align="center">10</p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+			<p align="center">11</p>
+		</td>
+	</tr>
+</table>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<ul>
+	<ul>
+		<li/>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">
+		“Register mode”: this parameter determines the registration
+		order. “Acquisition order” just registers the images in the
+		same order as they were acquired. However, this increases errors in
+		some cases. “zig zag” order registers the images following the
+		diagonals of the grid. 
+		</p>
+	</ul>
+</ul>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<h2 class="western" align="center"><a name="__RefHeading__214_985061526"></a>
+Tab “Preparation”</h2>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">This
+tabs sets parameters related to the pre-processing of the images.</p>
+<h3 class="western"><a name="__RefHeading__216_985061526"></a>Scaling</h3>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">A
+topographic image is a grid of pixels representing height values,
+arranged in a grid. To successfully register several images, the
+scale of the height values (pixel intensities) relative to the width
+and height of the pixels has to be provided.</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">Some
+file formats (as PLU) carry scaling information, but other file
+formats (such as PNG or TIFF) do not, or they provide it in custom
+headers. For these, the scaling parameters should be provided:</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<ul>
+	<li/>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">
+	“Z scale factor”: a factor to scale the height values. Note that
+	some formats such as PNG store values as integers in the 0-255 or
+	0-65535 ranges, while other formats as TIFF also allow for floating
+	point values, usually in the [0..1] range.</p>
+	<li/>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">
+	“Pixel step”: a factor to scale the width and depth of the
+	pixels</p>
+</ul>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">All
+images are supposed to be in the same scale, and the pixels are
+assumed to be square (otherwise some parts of the workflow would not
+function properly). The PLU file format already provides these
+parameters, so they are ignored for PLU files. It is important to
+provide adequate values for these parameters for TIFF and PNG files.
+Otherwise, the scales may be too different, resulting in incorrect
+registrations.</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<ul>
+	<li/>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">
+	“Rebase by median”: this is related to scaling: after rotating
+	each image (if applied), the median is subtracted to center the
+	height values. This can improve the performance of the algorithm
+	when all images consist mostly of a plane background with some
+	foreground features. However, for other kinds of images it can ruin
+	the registration process, so it is disabled by default.</p>
+</ul>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<h3 class="western"><a name="__RefHeading__218_985061526"></a>Plane
+rotation options</h3>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">Usually,
+heightmaps acquired with AFM or confocal devices are biased, in the
+sense that they are not perfectly horizontal, but have some
+inclination: the heights rise linearly in some direction, usually in
+a consistent way between consecutive images. This bias can ruin the
+registering process. The bias can be removed by fitting a plane to
+the image and rotating the image according the inclination of the
+plane. There are four rotation modes:</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<ul>
+	<li/>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">
+	“No rotation”</p>
+	<li/>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">
+	“Rotate only first image”: this is recommended only for the
+	RANSAC rotation algorithm (see help for the registration tab).</p>
+	<li/>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">
+	“Rotate all images by the first image”: this is the best in most
+	settings, since the bias is identical (or nearly identical) for
+	consecutively acquired images. The rotation plane is computed only
+	for the first image, and all images are de-rotated using that plane.</p>
+	<li/>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">
+	“Rotate all images independently”: a different rotation plane is
+	computed for each image. This is not recommended unless absolutely
+	and patently necessary.</p>
+</ul>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">There
+are two algorithms for computing the rotation plane:</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<ul>
+	<li/>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">
+	“Fit regression plane computed by SVD”: very fast and simple,
+	but very inaccurate except for very regular images consisting mostly
+	of a plane background.</p>
+	<p align="justify" style="margin-bottom: 0in; line-height: 100%"></p>
+	<li/>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">
+	“Fit plane computed by RANSAC”: use a RANSAC (RANdom SAmple
+	Consensus) algorithm to fit a plane just to the background of the
+	image. This algorithm algorithm works in iterations. In each
+	iteration, it draws a random sample of points (pixels of the image
+	considered as points in 3D), finding the best fitting plane for
+	these points, and finding how good it is for the rest of points,
+	discarding points that do not fit the plane. The best fit plane
+	across all iterations is the result. The algorithm has the following
+	parameters:</p>
+	<p align="justify" style="margin-bottom: 0in; line-height: 100%"></p>
+	<ul>
+		<li/>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">
+		Number of iterations</p>
+		<li/>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">
+		Maximum distance: the maximum distance (in pixel steps) between a
+		plane and a point to consider that the point fits the plane. This
+		parameter has to be set according to the roughness of the
+		background</p>
+		<li/>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">
+		Minimum ratio of points: to accept a plane, it has to fit at least
+		a minimum number of points. This parameter sets this number as a
+		ratio of the total number of points (pixels in the image). 
+		</p>
+	</ul>
+</ul>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<h2 class="western" align="center"><a name="__RefHeading__537_985061526"></a>
+Tab “Registration”</h2>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">This
+tab sets parameters related to the registration process. The
+registration proceeds by registering each image. The registration
+process of each image consists of several steps.</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<h3 class="western"><a name="__RefHeading__222_985061526"></a>First
+Phase</h3>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">In
+the first phase of the registration, one or more previous images are
+specified to overlap with the current image. A registration is found
+for each of these previous images, and the best one is selected.
+There are two algorithms for the first phase of the registration,
+which operate over two overlapping images:</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<ul>
+	<li/>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">
+	Phase Correlation: very accurate, but also very sensitive to noise,
+	and only valid for orthonormal images (i.e., the images were
+	acquired only translating the sample in the X and Y directions; the
+	sample was not rotated between image acquisition in any way relative
+	to the acquiring device. This algorithm has the following
+	parameters:</p>
+	<ul>
+		<li/>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">
+		“Enable Phase Correlation”: this is intended to disable phase
+		correlation if the images are too noisy or the images are not
+		orthogonal.</p>
+		<li/>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">
+		“Enable pre-whitening”: in certain cases, phase correlation is
+		improved if pre-whitening is applied.</p>
+		<li/>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">
+		“Enable subpixel precision: if the images are not noisy,
+		meaningful subpixel precision may be achieved. To this end, the
+		images are upsampled using an efficient technique with the scale
+		factor provided by the parameter “Subpixel scale factor”. By
+		default it is set to 100, allowing for two digits of subpixel
+		precision. 
+		</p>
+		<li/>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">
+		“Correlation coefficient threshold”: the minimum value of the
+		correlation coefficient between the overlapping areas of the two
+		images to consider that two images have been successfully
+		registered.</p>
+		<li/>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">
+		“Sequence of peaks to analyze”: phase correlation algorithms
+		operate in the Fourier transform of the images to accelerate the
+		process of computing the phase correlations. Usually, algorithms
+		select the highest peak, but this may not correspond to the highest
+		correlation coefficient. For noisy images, the best correlation
+		coefficient may correspond to low peaks. To make the algorithm more
+		robust while being reasonably fast for non-noisy images, we follow
+		this procedure iteratively:</p>
+		<ul>
+			<li/>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">
+			The peaks are ordered from highest to lowest.</p>
+			<li/>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">
+			For each number N in the sequence, we select the N highest peaks,
+			and compute their associated cross-correlation coefficients. If
+			the highest coefficient is higher than the “Correlation
+			coefficient threshold”, we consider to have found a valid
+			registration. 
+			</p>
+		</ul>
+	</ul>
+	<p align="justify" style="margin-bottom: 0in; line-height: 100%"></p>
+	<li/>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">
+	RANSAC rotation: very robust but less precise than phase
+	correlation. Image processing algorithms are used to extract
+	keypoints from each image (SIFT is used in this implementation, but
+	others such as SURF or ORB may be suitable). Then, the keypoints are
+	processed to find matching pairs between the two overlapping images.
+	As many errors, small biases and false positives may occur, these
+	matching keypoints do not represent a coherent registration. To
+	register the two images together,  a RANSAC (RANdom SAmple
+	Consensus) algorithm is used to find a suitable rotation. This
+	algorithm algorithm works in iterations. In each iteration, it draws
+	a random sample of matched pairs of keypoints, (pixels of the image
+	considered as points in 3D), finding the best fitting rotation for
+	these pairs of keypoints, and finding how good it is for the rest of
+	pairs of keypoints, discarding pairs that do not fit the rotation
+	(i.e., they are too far apart after the rotation). The best fit
+	rotation across all iterations is the result. The algorithm has the
+	following parameters:</p>
+	<p align="justify" style="margin-bottom: 0in; line-height: 100%"></p>
+	<ul>
+		<li/>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">
+		Number of iterations</p>
+		<li/>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">
+		Maximum distance: the maximum distance (in pixel steps) between the
+		two keypoints in a pair of matching keypoints to consider that the
+		pair fits the rotation. This parameter has to be set according to
+		how noisy are the images and the keypoint extraction algorithm.</p>
+		<li/>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">
+		Minimum ratio of points: to accept a rotation, it has to fit at
+		least a minimum number of pairs of keypoints. This parameter sets
+		this number as a ratio of the total number of matching pairs of
+		keypoints found between the two images. 
+		</p>
+	</ul>
+</ul>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p align="left" style="margin-bottom: 0in; line-height: 100%">There
+is another parameter related to RANSAC rotation:</p>
+<ul>
+	<p align="justify" style="margin-bottom: 0in; line-height: 100%"></p>
+</ul>
+<ul>
+	<li/>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">
+	“Keypoint matching threshold”:  this parameter is used to
+	extract matching pairs of keypoints between overlapping images.
+	Keypoints are characterized as points in a high-dimensional feature
+	space. For each keypoint K1 from the first image, the two nearest
+	keypoints in the second image are found (nearest in the feature
+	space, not in any geometrical sense), K2a and K2b. If ratio of the
+	distance from K1 to K2a divided by the distance from K1 to K2b is
+	lower than the threshold, K1 and K2a are determined to be a matching
+	pair of keypoints. We take this heuristic from David Lowe, creator
+	of the SIFT algorithm.</p>
+</ul>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p align="left" style="margin-bottom: 0in; line-height: 100%">The
+workflow in the first phase is as follows:</p>
+<ul>
+	<li/>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">
+	If phase correlation is enabled, compute phase correlations between
+	the current image and all previous images specified as overlapping
+	with this one. Then, select the previous image with the highest
+	correlation coefficient. If the highest correlation coefficient is
+	lower than the “Correlation coefficient threshold”, we consider
+	that phase correlation was not successful, and switch to RANSAC
+	rotation</p>
+	<li/>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">
+	If Phase correlation was not enabled or not successful, we compute
+	RANSAC rotations between the current image and all previous images
+	specified as overlapping with this one. Then, we select the RANSAC
+	rotation for the pair of images with the highest number of matching
+	keypoints fitting the rotation.</p>
+</ul>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<h3 class="western">Second Phase</h3>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">After
+the first phase, of the registration, the current image is roughly
+aligned with the registered ones, but some errors and a slight
+inclination may be present (even if the images have been de-rotated).
+In the second phase, the current image is checked against all
+previous images, to detect all overlapping regions. For each
+overlapping subregion, points from the current image and the oldest
+previous image are selected. After all overlapping subregions are
+processed, two sets of overlapping points are defined: one with
+points from the current image, and one with points from the previous
+images. These two sets of points are fine-registered using the
+Iterative Closest Point (ICP) algorithm. Since this algorithm is
+quite slow for large data sets, it is very slow if the images have
+large overlapping areas.</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">For
+now, the only parameter exposed for this algorithm is the maximum
+number of iterations of the algorithm.</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<h2 class="western" align="center"><a name="__RefHeading__1297_985061526"></a>
+Tab “Freeform parameters”</h2>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">This
+graphical user interface only exposes a part of all the configurable
+parameters of the registration engine. The best way to configure
+these is using a custom script (adapting simpleRegister.py, for
+example), but they can also be configured by specifying them in the
+textbox of this tab. The parameters are part of the object conf, so
+they can be set like this:</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">conf.PhaseCorrMinratio
+   = 0.01</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">If
+you want to use freeform parameters, please read the source code
+(especially the classes ConfigurationRegister and RegisterTools from
+the file heightmaps.py) to understand how to use them.</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<h2 class="western" align="center"><a name="__RefHeading__1299_985061526"></a>
+Tab “Log”</h2>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">This
+tab has a read-only textbox where the messages from the registration
+engine are written. The registration engine was not intended to be
+used from a graphical user interface. Errors and exceptions are
+exposed as such, without interpreting their ultimate causes. In
+particular, it expects all images specified as overlapping to be
+actually overlapping. If they are not, the first phase of the
+algorithm can fail, or compute a false registration. If the results
+are patently inexact, it is recommended to tune the parameters and
+try again.</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<h2 class="western" align="center"><a name="__RefHeading__753_463932619"></a>
+Tab “Visualization”</h2>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">In
+this tab, the registering process can be inspected online: it shows a
+rectangle for each processed image, and is useful to see intuitively
+how the images are being positioned, and to detect gross registering
+errors (i.e., images that obviously should not be in the position and
+orientation in which they have been registered) before the process is
+completed.</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<h2 class="western" align="center"><a name="__RefHeading__755_463932619"></a>
+Tab “Output”</h2>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">After
+the registration process is finished, the registered data still has
+to be rendered. The registration engine has a rich programming
+interface (API) to compute, render and show images and point cloud
+files containing the registered data. However, this API is not quite
+finished yet, may change in the future, and has lots of options,
+making it quite time-consuming to maintain a user interface to the
+API. As a result, the only facility to use the API is a textbox with
+a format similar to the one in the “Freeform parameters” tab.
+Each line is executed as an independent python statement (therefore,
+statements should not span several lines). A default script is
+provided.</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">Please
+note that this tab can be used for already finished registrations,
+<i>even</i> if the application was closed and then opened again. The
+only requisite is to set the working directory appropriately, and to
+avoid clicking on the “Start registration” button. Doing so will
+remove the saved registered data to start the registration process
+from scratch.</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<h2 class="western" align="center"><a name="__RefHeading__1301_985061526"></a>
+Tab “Help”</h2>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">Shows
+this help file.</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<h2 class="western" align="center"><a name="__RefHeading__1303_985061526"></a>
+Debug files</h2>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">If
+the registration fails, it is recommended to examine the debug files.
+These are PLY files, which can be viewed with many different 3D
+software solutions, such as MeshLab.</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<ul>
+	<li/>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">
+	“debug.FITTEDPLANE.#NUMBER#.ply”: one file for each computed
+	rotation plane (pre-processing step), if applicable.</p>
+	<li/>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">
+	“debug.FIRSTPHASE.#NUMBER#.ply”: one file for each image (apart
+	from the first image), it shows the best fist-phase registration
+	between the current image and one of the previous images specified
+	as overlapping. 
+	</p>
+	<li/>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">
+	“debug.ICP1.#NUMBER#.ply” and “debug.ICP2.#NUMBER#.ply”: one
+	file for each image (apart from the first image), it shows the two
+	sets of points just before / after the ICP algorithm is applied to
+	register them. 
+	</p>
+</ul>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<h2 class="western" align="center"><a name="__RefHeading__1305_985061526"></a>
+Intermediate files</h2>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">A
+large amount of files is generated to hold intermediate data. All but
+two of them (conf.p and log.txt)have the extension *.npy. These files
+are necessary for producing output data, but can be safely removed
+after all desired output images have been generated.</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+</body>
+</html>
