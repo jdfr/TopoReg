@@ -16,7 +16,7 @@ Sadly, I developed this before becoming educated into the necessity of single-st
 
 * we also need to install wxpython (in debian it is based upon the GTK port of wxwidgets) and wxGlade is useful to do most of the GUI's boilerplate automatically.
 
-* we use opencv. Specifically, we also use the nonfree module, which is a mess to install in debian, although a stackoverflow.com contributor has written fairly easy instructions to build it ( <http://stackoverflow.com/questions/18561910/opencv-python-cant-use-surf-sift#answer-27694433> ). We also modified slightly one of the sources of the nonfree module (sift.cpp), which should be replaced in the source tree of OpenCV's nonfree module (either the upstream tarball or in the debian source package that we modified to include the nonfree module) if we compile from source. The modification to sift.cpp is to enable the algorithm to accept images whose color components are in floating point format.
+* we use opencv. Specifically, we also use the nonfree module, which is a mess to install in debian, although a stackoverflow.com contributor has written fairly easy instructions to build it ( http://stackoverflow.com/questions/18561910/opencv-python-cant-use-surf-sift#answer-27694433 ). We also modified slightly one of the sources of the nonfree module (sift.cpp), which should be replaced in the source tree of OpenCV's nonfree module (either the upstream tarball or in the debian source package that we modified to include the nonfree module) if we compile from source. The modification to sift.cpp is to enable the algorithm to accept images whose color components are in floating point format.
 
 * we use PCL 1.7, available from the repos. Just install and enjoy. If you have to build it from source, godspeed.
 
@@ -41,9 +41,9 @@ Brief description of the sources
 
 * write3d.py: routines to write output files in PLY format (point clouds), can be open with meshlab
 
-* tifffile.py: to write tiff files (scipy depends upon PIL/Pillow, whose tiff support is not very good or inexistent, depending on the version). Adapted from third-party code (Golkhe's python modules, <http://www.lfd.uci.edu/~gohlke/code/tifffile.py.html>).
+* tifffile.py: to write tiff files (scipy depends upon PIL/Pillow, whose tiff support is not very good or inexistent, depending on the version). Adapted from third-party code (Golkhe's python modules, http://www.lfd.uci.edu/~gohlke/code/tifffile.py.html ).
 
-* stl.py: to write stl files, can be open with meshlab. Adapted from third-party code (python-stl v1.3.3: <https://github.com/WoLpH/numpy-stl/>).
+* stl.py: to write stl files, can be open with meshlab. Adapted from third-party code (python-stl v1.3.3: https://github.com/WoLpH/numpy-stl/ ).
 
 * simpleRegister.py: simple script to perform a registration
 
@@ -59,11 +59,11 @@ Brief description of the sources
 
 * accumsetup.py: script to compile a custom cython extension to speed up some array processing routines
 
-* rotations.py: computational geometry routines. Some routines are adapted from third-party code (Golkhe's python modules, <http://www.lfd.uci.edu/~gohlke/code/transformations.py.html>).
+* rotations.py: computational geometry routines. Some routines are adapted from third-party code (Golkhe's python modules, http://www.lfd.uci.edu/~gohlke/code/transformations.py.html ).
 
-* register_images.py: superresolution registration with FFT upsampling. Adapted from third-party code (<https://github.com/keflavich/image_registration>).
+* register_images.py: superresolution registration with FFT upsampling. Adapted from third-party code https://github.com/keflavich/image_registration
 
-* ransac.py: generic RANSAC implementation. Adapted from third-party code (<http://scipy.github.io/old-wiki/pages/Cookbook/RANSAC>).
+* ransac.py: generic RANSAC implementation. Adapted from third-party code http://scipy.github.io/old-wiki/pages/Cookbook/RANSAC
 
 * pluconv.py: code to read PLU files from our confocal device. Adapted from third-party code (gwyddion, originally in C).
 
