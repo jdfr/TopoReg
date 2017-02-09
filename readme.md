@@ -1,3 +1,5 @@
+![registered](../../wiki/images/registered.png)
+
 TopoReg
 =======
 
